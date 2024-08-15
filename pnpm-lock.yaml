@@ -20,27 +20,24 @@ importers:
       '@tarojs/plugin-framework-react':
         specifier: 4.0.4
         version: 4.0.4(@tarojs/helper@4.0.4)(@tarojs/runtime@4.0.4)(@tarojs/shared@4.0.4)(@vitejs/plugin-react@4.3.1(vite@4.5.3(@types/node@22.3.0)(sass@1.77.8)(terser@5.31.6)))(react@18.3.1)(vite@4.5.3(@types/node@22.3.0)(sass@1.77.8)(terser@5.31.6))
-      '@tarojs/plugin-platform-alipay':
-        specifier: 4.0.4
-        version: 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
+      '@tarojs/plugin-platform-alipay-dd':
+        specifier: 0.3.1
+        version: 0.3.1(@tarojs/plugin-platform-alipay@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4))(@tarojs/shared@4.0.4)
       '@tarojs/plugin-platform-h5':
         specifier: 4.0.4
         version: 4.0.4(@tarojs/taro@4.0.4(@tarojs/components@4.0.4(@tarojs/helper@4.0.4)(@tarojs/shared@4.0.4)(@types/react@18.3.3)(postcss@8.4.41)(react@18.3.1)(rollup@3.29.4))(@tarojs/helper@4.0.4)(@tarojs/shared@4.0.4)(@types/react@18.3.3)(postcss@8.4.41)(rollup@3.29.4))(@types/react@18.3.3)(postcss@8.4.41)(react@18.3.1)(rollup@3.29.4)(solid-js@1.8.21)
-      '@tarojs/plugin-platform-jd':
-        specifier: 4.0.4
-        version: 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
+      '@tarojs/plugin-platform-lark':
+        specifier: ^1.1.5
+        version: 1.1.5(@tarojs/components@4.0.4(@tarojs/helper@4.0.4)(@tarojs/shared@4.0.4)(@types/react@18.3.3)(postcss@8.4.41)(react@18.3.1)(rollup@3.29.4))(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
       '@tarojs/plugin-platform-qq':
         specifier: 4.0.4
         version: 4.0.4(@tarojs/plugin-platform-weapp@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4))(@tarojs/shared@4.0.4)
-      '@tarojs/plugin-platform-swan':
-        specifier: 4.0.4
-        version: 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
-      '@tarojs/plugin-platform-tt':
-        specifier: 4.0.4
-        version: 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
       '@tarojs/plugin-platform-weapp':
         specifier: 4.0.4
         version: 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
+      '@tarojs/plugin-platform-weapp-qy':
+        specifier: 0.0.9
+        version: 0.0.9(@tarojs/plugin-platform-weapp@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4))(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
       '@tarojs/react':
         specifier: 4.0.4
         version: 4.0.4(react@18.3.1)
@@ -2386,6 +2383,12 @@ packages:
       webpack:
         optional: true
 
+  '@tarojs/plugin-platform-alipay-dd@0.3.1':
+    resolution: {integrity: sha512-pJaCvySs8rfmG/HT3w+WzFyuS+ejJ1dJOW7E7EZ4ZSE6DETQhvlJdWycIPTHGNZlr7zvUP6YMsKTAL+pSKEzQA==}
+    peerDependencies:
+      '@tarojs/plugin-platform-alipay': ^3.5
+      '@tarojs/shared': ^3.5
+
   '@tarojs/plugin-platform-alipay@4.0.4':
     resolution: {integrity: sha512-iCX3Ub0hfQDfR1Len3EJhDm3G0v6SUWzALjwBglAbBgSNP11gVoItk9tkaY/viabC8nfwD1H4hBOz/aCKim/Fw==}
     engines: {node: '>= 18'}
@@ -2402,6 +2405,13 @@ packages:
     peerDependencies:
       '@tarojs/service': 4.0.4
       '@tarojs/shared': 4.0.4
+
+  '@tarojs/plugin-platform-lark@1.1.5':
+    resolution: {integrity: sha512-HMJLTGhU69syhYHO3VrNE+w1XnI5NAG8RQmy3qwcqoSxWGkLHuoZyHOcjEIxez+ZXX7nHkFlSZOZ4RUthbq7Ug==}
+    peerDependencies:
+      '@tarojs/components': ^3.3.0
+      '@tarojs/service': ^3.3.0
+      '@tarojs/shared': ^3.3.0
 
   '@tarojs/plugin-platform-qq@4.0.4':
     resolution: {integrity: sha512-N+IXsUdve8McNNQNdNHLmrrxc/yNZOgEU762mB6HtUT45NwZ9PnjKmPHignfoQ9DaA0J/1EDvJr1RNmnVvpuqw==}
@@ -2423,6 +2433,13 @@ packages:
     peerDependencies:
       '@tarojs/service': 4.0.4
       '@tarojs/shared': 4.0.4
+
+  '@tarojs/plugin-platform-weapp-qy@0.0.9':
+    resolution: {integrity: sha512-86RDKByuev0eekg0NUd4RBHw30FGbgvjOQktKLOuvRJ+ivxAd1CLtf3lcR6u7gGiTfvxH3H1SGPWkAsjf+wvfQ==}
+    peerDependencies:
+      '@tarojs/plugin-platform-weapp': ^3.1.3
+      '@tarojs/service': ^3.1.3
+      '@tarojs/shared': ^3.1.3
 
   '@tarojs/plugin-platform-weapp@4.0.4':
     resolution: {integrity: sha512-XucA5Ov1mTtQwzn7nGXqVjKN3vjzz3RoaQBXqa6pXMmg9Xa0+KAf65+eA5aqHHmaRQSarRzFQa8LQ7SwaTI4Iw==}
@@ -11158,6 +11175,11 @@ snapshots:
       react: 18.3.1
       vite: 4.5.3(@types/node@22.3.0)(sass@1.77.8)(terser@5.31.6)
 
+  '@tarojs/plugin-platform-alipay-dd@0.3.1(@tarojs/plugin-platform-alipay@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4))(@tarojs/shared@4.0.4)':
+    dependencies:
+      '@tarojs/plugin-platform-alipay': 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
+      '@tarojs/shared': 4.0.4
+
   '@tarojs/plugin-platform-alipay@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)':
     dependencies:
       '@tarojs/service': 4.0.4
@@ -11197,6 +11219,12 @@ snapshots:
       '@tarojs/service': 4.0.4
       '@tarojs/shared': 4.0.4
 
+  '@tarojs/plugin-platform-lark@1.1.5(@tarojs/components@4.0.4(@tarojs/helper@4.0.4)(@tarojs/shared@4.0.4)(@types/react@18.3.3)(postcss@8.4.41)(react@18.3.1)(rollup@3.29.4))(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)':
+    dependencies:
+      '@tarojs/components': 4.0.4(@tarojs/helper@4.0.4)(@tarojs/shared@4.0.4)(@types/react@18.3.3)(postcss@8.4.41)(react@18.3.1)(rollup@3.29.4)
+      '@tarojs/service': 4.0.4
+      '@tarojs/shared': 4.0.4
+
   '@tarojs/plugin-platform-qq@4.0.4(@tarojs/plugin-platform-weapp@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4))(@tarojs/shared@4.0.4)':
     dependencies:
       '@tarojs/plugin-platform-weapp': 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
@@ -11209,6 +11237,12 @@ snapshots:
 
   '@tarojs/plugin-platform-tt@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)':
     dependencies:
+      '@tarojs/service': 4.0.4
+      '@tarojs/shared': 4.0.4
+
+  '@tarojs/plugin-platform-weapp-qy@0.0.9(@tarojs/plugin-platform-weapp@4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4))(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)':
+    dependencies:
+      '@tarojs/plugin-platform-weapp': 4.0.4(@tarojs/service@4.0.4)(@tarojs/shared@4.0.4)
       '@tarojs/service': 4.0.4
       '@tarojs/shared': 4.0.4
 
